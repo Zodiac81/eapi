@@ -23,8 +23,6 @@ Route::apiResource('/products', 'ProductController');
 
 Route::group(['prefix'=>'products'], function () {
 
-    Route::apiResource('/{product_id}','ProductController' );
     Route::apiResource('/{product_id}/reviews', 'ReviewController');
-
 
 });
