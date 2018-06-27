@@ -11,7 +11,7 @@ class Review extends Model
 
     public function product()
     {
-        return $this->belongsTo("App\Product", "product_id");
+        return $this->belongsTo("App\Model\Product", "product_id");
     }
 
     public function user()
